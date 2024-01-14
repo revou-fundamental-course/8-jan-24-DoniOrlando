@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div id="containerIntro">
+        <h1>Katik</h1>
+        <p><b>(Kalkulator Matematik)</b></p>
+    </div>
+    <div class="panelheadercontent">
+    <header>
+        <h1>Welcome to Katik</h1>
+        <p>Hai Sobat, Selamat datang di Katik :]</p>
+        <p>Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+    </header>
+    
+    <div class="tab-content">
+        <div id="persegi" class="tab-pane fade in active">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h2>Luas Persegi</h2>
+                        </div>
+                        <div class="panel-body">
+                            <img src="assets/persegi.jpg" alt="Luas Persegi" class="persegi">
+                            <p class="text-left">Rumus Luas Persegi yaitu :</p>
+                            <p style="text-align: center;"><strong>L = S x S</strong></p>
+                            <p class="text-left">Di mana :<br/>L = Luas<br/>S = Sisi</p>
+                        </div>
+                        <div class="panel-footer">
+                            <h3>Hitung Luas Persegi</h3>
+                            <form id="luas-persegi" onsubmit="calculateLuasPersegi(); return false;">
+                                <input class="form-control" id="sisi" name="sisi" onblur="extractNumber(this,3,true);" onkeyup="extractNumber(this,3,true);" onkeypress="return blockNonNumbers(this, event, true, true);" placeholder="Nilai Sisi" type="text" required />
+                                <!-- <div id="loading-luas-persegi" class="text-center" style="display:none;"><br /><img src="images/loading.gif" alt="loading..." /></div>																													 -->
+                                <div id="result-luas-persegi" class="text-left" style="display:none;"></div>
+                                <p class="center">										
+                                <input type="submit" class="btn btn-lg btn-warning" value="Hitung">
+                                </p>	
+                                <p class="text-right">
+                                    <input type="reset" class="btn btn-warning" value="Reset" onclick="resetLuasPersegi();">
+                                </p>
+                            </form>											
+                        </div>
+                    </div> 
+                </div> 
+                <div class="col-sm-6">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h2>Keliling Persegi</h2>
+                        </div>
+                        <div class="panel-body">
+                            <img src="assets/persegi.jpg" alt="Keliling Persegi" class="persegi">
+                            <p class="text-left">Rumus Keliling Persegi yaitu :</p>
+                            <p style="text-align: center;"><strong>K = 4 x S</strong></p>
+                            <p class="text-left">Di mana :<br/>K = Keliling<br/>S = Sisi</p>
+                        </div>
+                        <div class="panel-footer">
+                            <h3>Hitung Keliling Persegi</h3>
+                            <form id="keliling-persegi" onsubmit="calculateKelilingPersegi(); return false;">
+                                <input class="form-control" id="sisiKeliling" name="sisiKeliling" onblur="extractNumber(this,3,true);" onkeyup="extractNumber(this,3,true);" onkeypress="return blockNonNumbers(this, event, true, true);" placeholder="Nilai Sisi" type="text" required />			
+                                <div id="result-keliling-persegi" class="text-left" style="display:none;"></div>
+                                <p class="center">											
+                                <input type="submit" class="btn btn-lg btn-warning" value="Hitung">
+                                </p>
+                                <p class="text-right">
+                                    <input type="reset" class="btn btn-warning" value="Reset" onclick="resetKelilingPersegi();">
+                                </p>
+                            </form>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
