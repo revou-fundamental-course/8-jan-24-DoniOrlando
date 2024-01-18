@@ -36,8 +36,7 @@
                         <div class="panel-footer">
                             <h3>Hitung Luas Persegi</h3>
                             <form id="luas-persegi" onsubmit="calculateLuasPersegi(); return false;">
-                                <input class="form-control" id="sisi" name="sisi" onblur="extractNumber(this,3,true);" onkeyup="extractNumber(this,3,true);" onkeypress="return blockNonNumbers(this, event, true, true);" placeholder="Nilai Sisi" type="text" required />
-                                <!-- <div id="loading-luas-persegi" class="text-center" style="display:none;"><br /><img src="images/loading.gif" alt="loading..." /></div>																													 -->
+                                <input class="form-control" id="sisiluas" name="sisi" onblur="extractNumber(this,3,true);" onkeyup="extractNumber(this,3,true);" onkeypress="return blockNonNumbers(this, event, true, true);" placeholder="Nilai Sisi" type="text" required />
                                 <div id="result-luas-persegi" class="text-left" style="display:none;"></div>
                                 <p class="center">										
                                 <input type="submit" class="btn btn-lg btn-warning" value="Hitung">
@@ -63,7 +62,7 @@
                         <div class="panel-footer">
                             <h3>Hitung Keliling Persegi</h3>
                             <form id="keliling-persegi" onsubmit="calculateKelilingPersegi(); return false;">
-                                <input class="form-control" id="sisiKeliling" name="sisiKeliling" onblur="extractNumber(this,3,true);" onkeyup="extractNumber(this,3,true);" onkeypress="return blockNonNumbers(this, event, true, true);" placeholder="Nilai Sisi" type="text" required />			
+                                <input class="form-control" id="sisikeliling" name="sisi" onblur="extractNumber(this,3,true);" onkeyup="extractNumber(this,3,true);" onkeypress="return blockNonNumbers(this, event, true, true);" placeholder="Nilai Sisi" type="text" required />			
                                 <div id="result-keliling-persegi" class="text-left" style="display:none;"></div>
                                 <p class="center">											
                                 <input type="submit" class="btn btn-lg btn-warning" value="Hitung">
@@ -79,5 +78,20 @@
         </div>
     </div>
 </div>
+<!-- Footer -->
+<footer class="centered-footer">
+    <p>Created with
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-code-slash text-dark fw-bold" viewBox="0 0 16 16">
+        <path
+          d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+      </svg>
+
+      by <a href="https://github.com/revou-fundamental-course/8-jan-24-DoniOrlando.git" target="_blank" class="text-dark fw-bold">Doni Orlando </i></a>
+    </p>
+  </footer>
+
+  <!-- Akhir Footer -->
 </body>
 </html>
