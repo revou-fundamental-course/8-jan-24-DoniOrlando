@@ -21,7 +21,7 @@ function calculateKelilingPersegi() {
     var sisiValue = document.getElementById('sisikeliling').value;
 
     // Example: Display the result in the result-keliling-persegi div
-    document.getElementById('result-keliling-persegi').innerText = 'Keliling Persegi: ' + (sisiValue * 4);
+    document.getElementById('result-keliling-persegi').innerHTML = 'K = 4 X S' + '<br>' + 'K = 4 X  ' + (sisiValue) + '<br>' + 'Keliling Persegi = ' + (sisiValue * 4);
     document.getElementById('result-keliling-persegi').style.display = 'block';
 }
 
