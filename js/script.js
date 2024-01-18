@@ -6,7 +6,7 @@ function calculateLuasPersegi() {
 
     // Example: Display the result in the result-luas-persegi div
     // document.getElementById('result-luas-persegi1').innerText = 'L = S X S'+ (sisiValue * sisiValue) ;
-    document.getElementById('result-luas-persegi').innerHTML = 'L = S X S' + '<br>' + 'Luas Persegi: ' + (sisiValue * sisiValue);
+    document.getElementById('result-luas-persegi').innerHTML = 'L = S X S' + '<br>' + 'L = ' + (sisiValue) +' X '+ (sisiValue) + '<br>' + 'Luas Persegi = ' + (sisiValue * sisiValue);
     document.getElementById('result-luas-persegi').style.display = 'block';
 }
 
