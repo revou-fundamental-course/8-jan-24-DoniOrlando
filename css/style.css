@@ -131,3 +131,11 @@ img {
     border: 1px solid whitesmoke;
     border-radius: 8px;
 }
+
+.centered-footer {
+    text-align: center;
+    background-color: #a49bb5;
+    box-sizing: border-box;
+    border: center 50% solid whitesmoke;
+    border-radius: 20px;
+}
